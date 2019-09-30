@@ -1,0 +1,14 @@
+# This RoleBinding allows the reading of pods in the development namespace
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: read-pods-development
+  namespace: development
+subjects:
+- kind: User
+  name: <your-intern-email>@manicode.us
+  apiGroup: ""
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: ""
