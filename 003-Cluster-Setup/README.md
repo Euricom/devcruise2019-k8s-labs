@@ -1,4 +1,4 @@
-# Kubernetes Cluster Setup
+# Kubernetes Cluster Setup [WIP]
 
 ## Deploying Your App to Kubernetes
 (!)This requires that you have GKE and Cloud Shell or MiniKube configured correctly. Please go back to `001-Lab-Setup` if you are not set up.
@@ -111,7 +111,7 @@ kubectl delete pod link-unshorten && kubectl delete svc link-unshorten
 ### Task 4: "Codifying" Your Deployment
 Running ad hoc commands in a terminal are no way to maintain a proper DevOps infrastructure. Kubernetes is built with "Infrastructure as Code" in mind by using manifests. Manifests can be written in JSON and YAML. We will be using YAML for all labs.
 
-1. In the `manifests` folder of this lab you will find a few files needed to launch our API. Open them up in a the Cloud Shell text editor or other code editor and take a look.
+1. In the `manifests` folder of this lab you will find a few files needed to launch our API. Open them up in a the Cloud Shell text editor and take a look.
 
 2. Go to the `manifests` directory using your terminal and use kubectl to launch the Service and the Deployment in your cluster. The `-f` flag is used to specify a manifest file:
 ```

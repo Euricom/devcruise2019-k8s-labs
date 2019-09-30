@@ -17,6 +17,8 @@ The lastest kubernetes version tested with these labs is v1.15.4.  To start mini
 minikube start --kubernetes-version v1.15.4
 ```
 
+Important note for **MAC USERS**: The latest minikube version might not work properly due to some DNS issues. If this is the case, make sure enable the _Kubernetes Cluster_ in _Docker Desktop_.
+
 ### GKE (no install)
 
 To minimize software and configuration on your local machine, will be using a service called [Google Cloud Shell](https://cloud.google.com/shell/docs/) which provides you with command-line access to your cloud resources directly from your browser. Cloud Shell supports the latest versions of Google Chrome, Mozilla Firefox, Microsoft Edge, Microsoft Internet Explorer 11+ and Apple Safari 8+. Safari in private browser mode is not supported.
